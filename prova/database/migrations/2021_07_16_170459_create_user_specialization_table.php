@@ -13,7 +13,7 @@ class CreateUserSpecializationTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_specialization', function (Blueprint $table) {
+        Schema::create('bdoctors.specialization_user', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('specialization_id');
@@ -29,6 +29,7 @@ class CreateUserSpecializationTable extends Migration
             $table->timestamps();
         });
     }
+
 
     /**
      * Reverse the migrations.

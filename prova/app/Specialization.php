@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Specialization extends Model
 {
     public function doctors (){
-        return $this->belongsTo('App\User');
+        return $this->belongsToMany('App\User');
     }
 }

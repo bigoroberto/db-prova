@@ -62,6 +62,7 @@ class RegisterController extends Controller
         ]);
     }
 
+
     /**
      * Create a new user instance after a valid registration.
      *
@@ -89,7 +90,7 @@ class RegisterController extends Controller
             'url_cv' => $url_cv,
         ]);
 
-        $new_user -> specializations()->attach($data['specializations']);
+        $new_user->specializations()->attach($data['specializations']);
 
         return $new_user;
     }

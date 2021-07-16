@@ -19,7 +19,11 @@
                 Per vedere i messaggi <button class="btn btn-secondary"><a href="/dashboard/messages">Clicca qui</a></button>
             </span>
 
-            ({{ dd(Auth::user()->specializations()) }})
+
+            <span>
+      {{--           {{ Auth::user()->specializations['name'] }} --}}
+            </span>
+            ({{-- {{ dd(Auth::user()->specializations()) }}) --}}
         </div>
     </div>
 </div>
